@@ -1,0 +1,31 @@
+{
+  "name": "typescript-type-gymnastics",
+  "version": "1.0.0",
+  "description": "TypeScript 体操（TypeScript Type Gymnastics）",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vitest",
+    "test": "vitest run",
+    "lint": "eslint . --ext .ts",
+    "format": "prettier --write .",
+    "gen": "tsx scripts/generate-challenge.ts"
+  },
+  "keywords": [
+    "type-gymnastics"
+  ],
+  "author": "aiyoudiao",
+  "license": "MIT",
+  "packageManager": "pnpm@10.6.5",
+  "devDependencies": {
+    "@types/node": "^24.0.15",
+    "eslint": "^9.31.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-import": "^2.32.0",
+    "prettier": "^3.6.2",
+    "tsup": "^8.5.0",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.4"
+  }
+}
