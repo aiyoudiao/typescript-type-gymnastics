@@ -10,6 +10,7 @@ function toKebabCase(str: string): string {
     .replace(/[A-Z]/g, (m) => '-' + m.toLowerCase())
     .replace(/\s+/g, '-')
     .replace(/^-/, '')
+    .replaceAll('--', '-')
 }
 
 function ensureDir(dir: string) {
