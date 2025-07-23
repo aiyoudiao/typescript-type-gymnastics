@@ -7,6 +7,8 @@
   "scripts": {
     "dev": "vitest",
     "test": "vitest run",
+    "test:ui": "vitest --ui",
+    "coverage": "vitest --coverage",
     "lint": "eslint . --ext .ts",
     "format": "prettier --write .",
     "gen": "tsx scripts/generate-challenge.ts"
