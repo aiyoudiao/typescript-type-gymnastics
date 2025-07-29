@@ -81,7 +81,7 @@ const map = {
 
 type levelStr = keyof typeof map
 async function sync(levels: levelStr[] = Object.keys(map) as levelStr[]) {
-  const entries = fs.readdirSync(CHALLENGE_DIR).slice(0, 30)
+  const entries = fs.readdirSync(CHALLENGE_DIR)
   const levelMap = {
     ...Object.keys(map).reduce((acc, level) => {
       acc[level] = 0
@@ -218,10 +218,4 @@ describe('${id} - ${kebabName}(${zhCnTitle})', () => {
   }
 }
 
-await sync([
-  'easy',
-  // 'medium',
-  // 'hard',
-  // 'extreme',
-  // 'warm'
-])
+await sync(['easy', 'medium', 'hard', 'extreme', 'warm'])

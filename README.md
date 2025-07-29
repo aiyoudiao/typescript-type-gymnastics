@@ -2,6 +2,9 @@
 
 TypeScript 体操（TypeScript Type Gymnastics）
 
+- https://www.typescriptlang.org/docs/handbook/2/types-from-types.html
+
+
 ## 初始化
 
 ```bash
